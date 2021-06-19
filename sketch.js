@@ -10,8 +10,7 @@ var box1,box2,box3,box4,box5,box6,box7,box8,box9,box10;
 function preload()
 {
   getBackgroundImg();
-  bg=loadImage("im.jpg")
-  bg1=loadImage("images.jpg")
+  
 }
 
 function setup() {
@@ -136,12 +135,12 @@ var hour=datetime.slice(11,13);
 
 if(hour>=6 && hour<=18){
 
-  backgroundimg=bg1
+  backgroundimg=loadImage("im.jpg")
+ 
 }
 
 else{
-backgroundimg=bg
-
+  backgroundimg=loadImage("images.jpg")
 }
 //console.log(backgroundImg);
 
